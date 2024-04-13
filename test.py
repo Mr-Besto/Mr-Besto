@@ -31,11 +31,6 @@ def handle_document(message):
 	id  = message.from_user.id
 	url = requests.get(f"https://api.telegram.org/bot{token}/getchatmember?chat_id={my_ch}&user_id={id}").text
 	if "member" in url or "creator" in url or "administartor" in url:
-		   document=message.document
-           f_size=document.file_size
-           if not f_size<1000000:
-           bot.reply_to(message,"pleaze file under 1mb")
-           lis.append(user_id)
 	       os.system('rm -rf Dec_Plya_Team.py');chat_id = message.chat.id
 	       file_info = bot.get_file(message.document.file_id)
 	       downloaded_file = bot.download_file(file_info.file_path)
