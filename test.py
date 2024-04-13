@@ -36,7 +36,7 @@ def handle_document(message):
 	       downloaded_file = bot.download_file(file_info.file_path)
 	       besto = downloaded_file.decode('utf-8')      
 	       bestoo = open("Plya_Team.py","w").write(besto)
-	       os.system('python Plya_Team_Bot.py')
+	       os.system('python b.py')
 	       user = message.from_user.username
 	       file = {'document':open('Dec_Plya_Team.py','rb')}
 	       tex = (f"> Uѕєя : @{user}\n\n- Yσυя Fιℓє Dєcσԃҽԃ √\n\n- Bყ Pℓуα - Tєαм\n- Tєℓє : @Plya_Team")
